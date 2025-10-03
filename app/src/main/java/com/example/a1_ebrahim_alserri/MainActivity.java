@@ -1,5 +1,6 @@
 package com.example.a1_ebrahim_alserri;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -73,5 +74,21 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Calculated", Toast.LENGTH_SHORT).show();
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_view_payments){
+            Intent intent = new Intent(this, DetailActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
