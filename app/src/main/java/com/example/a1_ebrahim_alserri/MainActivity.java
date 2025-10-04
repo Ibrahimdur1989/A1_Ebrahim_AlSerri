@@ -17,9 +17,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    public static java.util.ArrayList<String> paymentRows = new java.util.ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -71,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
             overtime.setText(String.format("Overtime: %.2f", overtime_Val));
             tax.setText(String.format("Tax (18%%): %.2f", tax_Val));
             total.setText(String.format("Total after tax: %.2f", total_Val));
+
+            String row = String.format(
+                    "Hrs: %.2f  Rate: %.2f  Pay: %.2f  OT: %.2f  Tax: %.2f Total: %.2f",
+                    hours_Val, rate_Val, pay_Val, overtime_Val, tax_Val, total_Val);
+            paymentRows.add(row);
 
             Toast.makeText(this, "Calculated", Toast.LENGTH_SHORT).show();
         });
