@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Payment Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="hours">Hours worked</string>
+    <string name="rate">Hourly rate</string>
+    <string name="pay">Pay: 0.00</string>
+    <string name="overtime">Overtime: 0.00</string>
+    <string name="tax">Tax (18%): 0.00</string>
+    <string name="total">Total after tax: 0.00</string>
 </resources>
