@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:hint="Hours worked"
         android:inputType="number"
-        android:layout_marginTop="50sp"/>
+        android:layout_marginTop="80sp"/>
 
     <EditText
         android:id="@+id/rate"
@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:text="Pay: 0.00"
         android:textSize="16sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"/>
 
 
 
@@ -49,7 +50,8 @@
         android:layout_height="wrap_content"
         android:text="Overtime: 0.00"
         android:textSize="16sp"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="10dp"/>
 
     <TextView
         android:id="@+id/tax"
@@ -57,7 +59,8 @@
         android:layout_height="wrap_content"
         android:text="Tax (18%): 0.00"
         android:textSize="16sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="10dp"/>
 
     <TextView
         android:id="@+id/total"
@@ -66,6 +69,7 @@
         android:text="Total after tax: 0.00"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
 
 </LinearLayout>
