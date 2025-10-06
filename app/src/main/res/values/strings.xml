@@ -7,4 +7,5 @@
     <string name="overtime">Overtime: 0.00</string>
     <string name="tax">Tax (18%): 0.00</string>
     <string name="total">Total after tax: 0.00</string>
+    <string name="menu_view">View Payments</string>
 </resources>
