@@ -4,5 +4,5 @@
     <item
         android:id="@+id/action_view_payments"
         android:title="@string/menu_view"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 </menu>
