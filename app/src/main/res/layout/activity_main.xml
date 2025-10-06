@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cool_gray"
+    android:gravity="center"
     tools:context=".MainActivity">
 
 
@@ -16,8 +17,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/hours"
         android:inputType="number"
-        android:importantForAutofill="no"
-        android:layout_marginTop="80dp"/>
+        android:importantForAutofill="no"/>
 
     <EditText
         android:id="@+id/rate"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/pay"
         android:textSize="16sp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="48dp"
         android:layout_marginStart="10dp"/>
 
 
