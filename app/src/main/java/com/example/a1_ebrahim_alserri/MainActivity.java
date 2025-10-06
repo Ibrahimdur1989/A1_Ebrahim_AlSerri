@@ -75,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
             total.setText(String.format("Total after tax: %.2f", total_Val));
 
             String row = String.format(
-                    "Hrs: %.2f  Rate: %.2f  Pay: %.2f  Overtime: %.2f  Tax: %.2f Total: %.2f",
+                    "Hours Worked: %.2f       Rate: %.2f " +
+                    "\nPay: %.2f                     Overtime: %.2f " +
+                    "\nTax: %.2f                        Total: %.2f",
                     hours_Val, rate_Val, pay_Val, overtime_Val, tax_Val, total_Val);
             paymentRows.add(row);
 
