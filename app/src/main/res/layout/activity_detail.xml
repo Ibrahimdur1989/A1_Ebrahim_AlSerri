@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/soft_slate"
+    android:padding="5dp"
     tools:context=".DetailActivity">
 
     <ListView
         android:id="@+id/PaymentsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="9dp"
-        android:layout_marginHorizontal="10dp"/>
+        android:dividerHeight="10dp"/>
 
 </LinearLayout>
